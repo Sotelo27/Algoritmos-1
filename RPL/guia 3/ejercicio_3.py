@@ -19,9 +19,6 @@ Ejemplo:
    validar_contraseña("!Alg123") => False
 '''
 
-from curses.ascii import isalpha
-from re import I
-
 def contar_caracteres(cadena:str):
     #funcion que recorre una cadena y cuenta sus caracteres
     suma = 0
@@ -37,22 +34,21 @@ def comprobar_mayus(cadena):
             validacion = True
     return validacion
 
-def validar_contraseña(cadena):
+def validar_contrasenia(cadena):
     #funcion que analizando ciertas condiciones, valida o no una contraseña
     caracteres_totales = contar_caracteres(cadena)
     validacion = False
     validar_mayus = comprobar_mayus(cadena)
     if (caracteres_totales > 7 and caracteres_totales < 15) and cadena.isalnum() == False and validar_mayus == True:
         validacion = True
-    print(validacion)
     return validacion
 
 hola = "hola"
 #print(hola.isalnum())
 #print(validar_contraseña("Algoritmos123"))
-validar_contraseña("!Algoritmos123") 
-validar_contraseña("!Algoritmos123!Algoritmos123") 
-validar_contraseña("algoritmos") 
-validar_contraseña("algoritmos123") 
-validar_contraseña("Algoritmos123") 
-validar_contraseña("!Alg123") 
+validar_contrasenia("!Algoritmos123") 
+validar_contrasenia("!Algoritmos123!Algoritmos123") 
+validar_contrasenia("algoritmos") 
+validar_contrasenia("algoritmos123") 
+validar_contrasenia("Algoritmos123") 
+validar_contrasenia("!Alg123") 

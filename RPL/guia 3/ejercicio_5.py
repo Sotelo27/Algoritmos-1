@@ -13,6 +13,10 @@ Ejemplos:
     palabra_mas_larga("Quiero aprobar algoritmos y algebra") => "algoritmos"
 '''
 
+
+from cgitb import text
+
+
 def palabra_mas_larga(texto):
     caracteres_totales = 0
     palabra_larga = ""
