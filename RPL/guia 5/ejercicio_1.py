@@ -49,7 +49,8 @@ def mezclar_diccionarios(dicc_uno, dicc_dos):
 def filtrar_por_sumar_diez(diccionario):
     '''
     Recibe un diccionario cuyas claves son enteros, y también su valor asociado. 
-    Retorna un diccionario que contiene únicamente los pares clave-valor del diccionario que se recibió por parámetro que al sumarlos sean mayores o iguales a 10.
+    Retorna un diccionario que contiene únicamente los pares clave-valor del 
+    diccionario que se recibió por parámetro que al sumarlos sean mayores o iguales a 10.
 
     Ejemplo:
 
