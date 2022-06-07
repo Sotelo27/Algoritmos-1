@@ -12,5 +12,5 @@ Se pide que armes un programa en Python, compuesto por funciones, que:
 
 """
 
-diccionario = {"clave":2 , "pepe" : 5 ,"jose" : 98}
-print(diccionario.items())
+lista = []
+lista_2 = sorted(lista,key=len)

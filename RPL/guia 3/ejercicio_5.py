@@ -17,20 +17,20 @@ Ejemplos:
 from cgitb import text
 
 
+
 def palabra_mas_larga(texto):
-    caracteres_totales = 0
     palabra_larga = ""
     auxiliar = ""
-    while caracteres_totales <= len(texto):
-        if texto[caracteres_totales] == " " and caracteres_totales < len(texto):
-            if len(auxiliar) > len(palabra_larga):
-                palabra_larga = auxiliar
-                auxiliar = ""
-        caracteres_totales += 1
-    print(palabra_larga)
-    return palabra_larga    
+    for caracter in texto:
+        if caracter == " ":
+            auxiliar += caracter
+        if len(auxiliar) > len(palabra_larga):
+            palabra_larga = auxiliar
+        else:
+            auxiliar = ""
+    return palabra_larga
 
-palabra_mas_larga("Holas como iop yui avioneta paj")
+print(palabra_mas_larga("arbol como esdrujula"))
 
 
 
